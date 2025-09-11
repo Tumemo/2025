@@ -1,0 +1,98 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #282c40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    background-color: #282c40;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px royalblue;
+}
+div{
+    height: auto;
+    width: auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px royalblue;
+    background-color: #6f92bf;
+}
+
+h1 {
+    color: #282c40;
+}
+
+h2 {
+    color: #282c40;
+;
+}
+
+p,label{
+    font-size: 18px;
+    color: #282c40;
+}
+
+h1.win {
+    color: #28a745;
+}
+
+h1.lose {
+    color: #dc3545;
+}
+
+h2.win {
+    color: #28a745;
+}
+
+h2.lose {
+    color: #dc3545;
+}
+
+.dica {
+    font-weight: bold;
+    color: #007bff;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #6f92bf;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #282c40;
+    outline: #007bff;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #6f92bf;
+    background-color: #282c40;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #435771;
+}
+
+/* Estilos específicos para páginas de vitória e derrota */
+h1.victory {
+    color: #28a745;
+}
+
+h1.defeat {
+    color: #dc3545;
+}

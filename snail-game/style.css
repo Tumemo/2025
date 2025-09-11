@@ -1,0 +1,133 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a0033; /* Roxo escuro */
+    color: #e0d0ff; /* Lilás claro */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha ao topo */
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 20px; /* Espaço no topo */
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #330066; /* Roxo médio */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(153, 51, 255, 0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 700px;
+}
+
+h1, h2, h3 {
+    color: #cc99ff; /* Roxo mais claro */
+    margin-bottom: 15px;
+}
+
+#login-section, #game-section {
+    margin-top: 20px;
+}
+
+#login-form label,
+#login-form input,
+#login-form button {
+    display: block;
+    width: calc(100% - 20px); /* Ajusta para padding */
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#login-form input {
+    border: 2px solid #9933ff; /* Roxo vibrante */
+    border-radius: 5px;
+    background-color: #26004d; /* Roxo bem escuro */
+    color: #e0d0ff;
+}
+
+#login-form button, #start-button {
+    background-color: #9933ff; /* Roxo vibrante */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(153, 51, 255, 0.4);
+}
+
+#login-form button:hover, #start-button:hover {
+    background-color: #cc99ff; /* Roxo mais claro */
+    transform: translateY(-2px);
+}
+
+#login-form button:active, #start-button:active {
+    transform: translateY(0);
+}
+
+
+.score-board {
+    background-color: #26004d; /* Roxo bem escuro */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    border: 2px solid #9933ff;
+}
+
+.score-board h3 {
+    margin-top: 10px;
+    color: #cc99ff;
+}
+
+.score-board ul {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.score-board li {
+    padding: 5px 0;
+    border-bottom: 1px dotted #6600cc; /* Roxo pontilhado */
+}
+
+.score-board li:last-child {
+    border-bottom: none;
+}
+
+#game-canvas {
+    width: 400px;
+    height: 400px;
+    background-color: #0d001a; /* Roxo quase preto */
+    border: 5px solid #6600cc; /* Roxo escuro forte */
+    border-radius: 10px;
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden; /* Garante que os elementos não saiam */
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.snake-body {
+    background-color: #ff66cc; /* Rosa vibrante */
+    border: 2px solid #cc0099; /* Rosa escuro */
+    border-radius: 3px; /* Cantos levemente arredondados */
+    box-sizing: border-box; /* Importante para bordas */
+}
+
+.food {
+    background-color: #ffff00; /* Amarelo brilhante */
+    border: 2px solid #cc9900;
+    border-radius: 50%; /* Formato de bolinha */
+    box-sizing: border-box;
+}
+
+#start-button {
+    margin-top: 20px;
+    display: block; /* Faz o botão ocupar sua própria linha */
+    margin-left: auto;
+    margin-right: auto;
+}
